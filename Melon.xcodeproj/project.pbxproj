@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3C155B6777F31C48930B6E /* Pods_Melon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497F9F1F601BE873535A39B2 /* Pods_Melon.framework */; };
 		9F1FE8D21DD076DD004A423E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8D01DD076DD004A423E /* Main.storyboard */; };
 		9F1FE8D41DD076DD004A423E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8D31DD076DD004A423E /* Assets.xcassets */; };
 		9F1FE8D71DD076DD004A423E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8D51DD076DD004A423E /* LaunchScreen.storyboard */; };
@@ -28,19 +29,18 @@
 		9F1FE9101DD07743004A423E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8F71DD07743004A423E /* Info.plist */; };
 		9F1FE9111DD07743004A423E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8F91DD07743004A423E /* HTTPMethod.swift */; };
 		9F1FE9121DD07743004A423E /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8FA1DD07743004A423E /* String+Encoding.swift */; };
-		9F1FE9131DD07743004A423E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8FD1DD07743004A423E /* LaunchScreen.storyboard */; };
-		9F1FE9141DD07743004A423E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8FF1DD07743004A423E /* Main.storyboard */; };
-		9F1FE9151DD07743004A423E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE9011DD07743004A423E /* Info.plist */; };
 		9F1FE9161DD07743004A423E /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE9031DD07743004A423E /* TripDetailViewController.swift */; };
 		9F1FE9171DD07743004A423E /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE9041DD07743004A423E /* TripsViewController.swift */; };
+		9F1FE9191DD078ED004A423E /* ConnectBankAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE9181DD078ED004A423E /* ConnectBankAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240B4D9E4CC40B1C1C828C34 /* Pods-Melon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Melon/Pods-Melon.debug.xcconfig"; sourceTree = "<group>"; };
+		497F9F1F601BE873535A39B2 /* Pods_Melon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1FE8C91DD076DD004A423E /* Melon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1FE8D11DD076DD004A423E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F1FE8D31DD076DD004A423E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F1FE8D61DD076DD004A423E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F1FE8D81DD076DD004A423E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1FE8DE1DD07710004A423E /* Melon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Melon-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F1FE8DF1DD07710004A423E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F1FE8E21DD07727004A423E /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -61,11 +61,11 @@
 		9F1FE8F91DD07743004A423E /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		9F1FE8FA1DD07743004A423E /* String+Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
 		9F1FE8FB1DD07743004A423E /* Plaidster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plaidster.h; sourceTree = "<group>"; };
-		9F1FE8FE1DD07743004A423E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F1FE9001DD07743004A423E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F1FE9011DD07743004A423E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1FE9031DD07743004A423E /* TripDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		9F1FE9041DD07743004A423E /* TripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		9F1FE9181DD078ED004A423E /* ConnectBankAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectBankAccountViewController.swift; sourceTree = "<group>"; };
+		9FC7BC0A1DE585CD00466319 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAF8D2BD45424A619248680 /* Pods-Melon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Melon/Pods-Melon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +73,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3C155B6777F31C48930B6E /* Pods_Melon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E004DB050694658C2FD34D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				240B4D9E4CC40B1C1C828C34 /* Pods-Melon.debug.xcconfig */,
+				EAAF8D2BD45424A619248680 /* Pods-Melon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		631FF972DBEF394FB0201B26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				497F9F1F601BE873535A39B2 /* Pods_Melon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F1FE8C01DD076DD004A423E = {
 			isa = PBXGroup;
 			children = (
 				9F1FE8CB1DD076DD004A423E /* Melon */,
 				9F1FE8CA1DD076DD004A423E /* Products */,
+				5E004DB050694658C2FD34D7 /* Pods */,
+				631FF972DBEF394FB0201B26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,14 +120,13 @@
 			children = (
 				9F1FE8E11DD07727004A423E /* Objects */,
 				9F1FE8E81DD07743004A423E /* Plaidster */,
-				9F1FE8FC1DD07743004A423E /* Supporting */,
 				9F1FE9021DD07743004A423E /* ViewControllers */,
 				9F1FE8DF1DD07710004A423E /* AppDelegate.swift */,
 				9F1FE8D01DD076DD004A423E /* Main.storyboard */,
 				9F1FE8D31DD076DD004A423E /* Assets.xcassets */,
 				9F1FE8D51DD076DD004A423E /* LaunchScreen.storyboard */,
-				9F1FE8D81DD076DD004A423E /* Info.plist */,
 				9F1FE8DE1DD07710004A423E /* Melon-Bridging-Header.h */,
+				9FC7BC0A1DE585CD00466319 /* Info.plist */,
 			);
 			path = Melon;
 			sourceTree = "<group>";
@@ -176,21 +195,12 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		9F1FE8FC1DD07743004A423E /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				9F1FE8FD1DD07743004A423E /* LaunchScreen.storyboard */,
-				9F1FE8FF1DD07743004A423E /* Main.storyboard */,
-				9F1FE9011DD07743004A423E /* Info.plist */,
-			);
-			path = Supporting;
-			sourceTree = "<group>";
-		};
 		9F1FE9021DD07743004A423E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				9F1FE9031DD07743004A423E /* TripDetailViewController.swift */,
 				9F1FE9041DD07743004A423E /* TripsViewController.swift */,
+				9F1FE9181DD078ED004A423E /* ConnectBankAccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F1FE8DB1DD076DD004A423E /* Build configuration list for PBXNativeTarget "Melon" */;
 			buildPhases = (
+				97C5E6B1225D25EA38752360 /* [CP] Check Pods Manifest.lock */,
 				9F1FE8C51DD076DD004A423E /* Sources */,
 				9F1FE8C61DD076DD004A423E /* Frameworks */,
 				9F1FE8C71DD076DD004A423E /* Resources */,
+				5F3BD24BA6D3CAF6BF726E60 /* [CP] Embed Pods Frameworks */,
+				29F1EA951736CFB51315EF63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,14 +272,59 @@
 				9F1FE9101DD07743004A423E /* Info.plist in Resources */,
 				9F1FE8D71DD076DD004A423E /* LaunchScreen.storyboard in Resources */,
 				9F1FE8D41DD076DD004A423E /* Assets.xcassets in Resources */,
-				9F1FE9141DD07743004A423E /* Main.storyboard in Resources */,
-				9F1FE9131DD07743004A423E /* LaunchScreen.storyboard in Resources */,
 				9F1FE8D21DD076DD004A423E /* Main.storyboard in Resources */,
-				9F1FE9151DD07743004A423E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29F1EA951736CFB51315EF63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Melon/Pods-Melon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F3BD24BA6D3CAF6BF726E60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Melon/Pods-Melon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C5E6B1225D25EA38752360 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F1FE8C51DD076DD004A423E /* Sources */ = {
@@ -280,6 +338,7 @@
 				9F1FE9051DD07743004A423E /* PlaidError.swift in Sources */,
 				9F1FE8E51DD07727004A423E /* People.swift in Sources */,
 				9F1FE9161DD07743004A423E /* TripDetailViewController.swift in Sources */,
+				9F1FE9191DD078ED004A423E /* ConnectBankAccountViewController.swift in Sources */,
 				9F1FE90E1DD07743004A423E /* Plaidster.swift in Sources */,
 				9F1FE90B1DD07743004A423E /* PlaidAccount.swift in Sources */,
 				9F1FE9071DD07743004A423E /* PlaidsterError.swift in Sources */,
@@ -312,22 +371,6 @@
 				9F1FE8D61DD076DD004A423E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		9F1FE8FD1DD07743004A423E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F1FE8FE1DD07743004A423E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		9F1FE8FF1DD07743004A423E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F1FE9001DD07743004A423E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -428,6 +471,7 @@
 		};
 		9F1FE8DC1DD076DD004A423E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240B4D9E4CC40B1C1C828C34 /* Pods-Melon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -444,6 +488,7 @@
 		};
 		9F1FE8DD1DD076DD004A423E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAF8D2BD45424A619248680 /* Pods-Melon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -476,6 +521,7 @@
 				9F1FE8DD1DD076DD004A423E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,9 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
-        
-        var plaid = Plaidster.init(clientID: "581ee2bda753b94cacdbce76", secret: "3277949418c014394b0224227a6324", mode: PlaidEnvironment.development)
-
+    
         return true
     }
 

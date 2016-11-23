@@ -12,7 +12,7 @@ import Foundation
 class TripsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var trips : [Trip] = [Trip(name: "Trip to LA", startDate: Date(), endDate: Date())]
     var tableView: UITableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -62,7 +62,8 @@ class TripsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func createNewTrip() {
-        
+        let connectVC = ConnectBankAccountViewController()
+        self .present(connectVC, animated: true, completion: nil)
     }
 
 
