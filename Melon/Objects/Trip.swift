@@ -13,7 +13,7 @@ class Trip : NSObject {
     var startDate : Date
     var endDate : Date
     var destinations : [String] = []
-    var buddies : [People] = [People(name: "siyao")]
+    var buddies : [Person] = []
     
     init(name : String, startDate: Date, endDate: Date) {
         self.name = name

@@ -12,16 +12,34 @@ import SnapKit
 class ConnectBankAccountViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var plaid = Plaidster.init(clientID: "581ee2bda753b94cacdbce76", secret: "3277949418c014394b0224227a6324", mode: PlaidEnvironment.development)
     
+    var accountNameField : UITextField!
     var usernameField : UITextField!
     var passwordField : UITextField!
     var bankField : UIPickerView!
     var submitButton : UIButton!
     var banks = ["bofa", "chase"]
+    var people : [Person]
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    init(people : [Person]) {
+        super.init(nibName: nil, bundle: nil)
+        self.people = people
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
+        
+        accountNameField = UITextField()
+        accountNameField.placeholder = "Account Name"
+        accountNameField.textColor = UIColor.black
+        accountNameField.borderStyle = UITextBorderStyle.roundedRect
+        accountNameField.autocapitalizationType = .none
+        view.addSubview(accountNameField)
         
         usernameField = UITextField()
         usernameField.placeholder = "username"
@@ -52,10 +70,16 @@ class ConnectBankAccountViewController: UIViewController, UIPickerViewDataSource
         submitButton.addTarget(self, action: #selector(self.submitButtonPressed), for: UIControlEvents.touchUpInside)
         view.addSubview(submitButton)
         
-        usernameField.snp.makeConstraints { (make) -> Void in
+        accountNameField.snp.makeConstraints { (make) -> Void in
             make.size.equalTo(CGSize(width: 200, height: 50))
             make.centerX.equalTo(self.view)
             make.top.equalTo(100)
+        }
+
+        usernameField.snp.makeConstraints { (make) -> Void in
+            make.size.equalTo(CGSize(width: 200, height: 50))
+            make.centerX.equalTo(self.view)
+            make.top.equalTo(accountNameField.snp.bottom).offset(15)
         }
         
         passwordField.snp.makeConstraints { (make) -> Void in
@@ -82,6 +106,7 @@ class ConnectBankAccountViewController: UIViewController, UIPickerViewDataSource
         let type = banks[bankField.selectedRow(inComponent: 0)]
         plaid.addUser(username: usernameField.text!, password: passwordField.text!, pin: nil, type: type) { (accessToken, mfaType, mfa, accounts, transactions, error) -> (Void) in
             if accessToken != nil {
+                let account = Account(name: accountNameField.text!, accessToken: accessToken, bankType: type)
                 print("success! token %@", accessToken)
             }
         }

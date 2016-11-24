@@ -1,16 +1,17 @@
 //
-//  TripsViewController.swift
+//  PeopleViewController.swift
 //  Melon
 //
-//  Created by Siyao Xie on 11/6/16.
+//  Created by Siyao Xie on 11/23/16.
 //  Copyright © 2016 Siyao Xie. All rights reserved.
 //
 
 import UIKit
 import Foundation
 
-class TripsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var trips : [Trip] = [Trip(name: "Trip to LA", startDate: Date(), endDate: Date())]
+class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var people : [Person] = []
+    var accounts : [Account] = []
     var tableView: UITableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
     var peopleButton : UIBarButtonItem?
     var createButton : UIBarButtonItem?
@@ -19,48 +20,53 @@ class TripsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         
         createButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(createButtonPressed))
-        peopleButton = UIBarButtonItem(image: UIImage(named: "person"), style: .plain, target: self, action: #selector(peopleButtonPressed))
-
-        navigationItem.title = "My Trips"
-        navigationItem.leftBarButtonItem = peopleButton
+        
+        navigationItem.title = "People"
         navigationItem.rightBarButtonItem = createButton
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "accountCell")
         view.addSubview(tableView)
-
+        
     }
     // MARK: - Table View
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return people.count
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return trips.count
+        return accounts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        let currentTrip:Trip = trips[indexPath.row]
-        cell.textLabel!.text = currentTrip.name
+        let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "accountCell")
+        
+        let currentAccount : Account = accounts[indexPath.row]
+        cell.textLabel!.text = currentAccount.name
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 40
     }
-
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
     }
     
-    func createButtonPressed() {
-        let connectVC = ConnectBankAccountViewController()
-        self .present(connectVC, animated: true, completion: nil)
+    func refreshAccounts()
+    {
+        var refreshedAccounts : [Account] = []
+        for person: Person in people {
+            refreshedAccounts.append(contentsOf: person.accounts)
+        }
+        self.accounts = refreshedAccounts
     }
     
-    func peopleButtonPressed() {
-        let connectVC = ConnectBankAccountViewController()
-        self .present(connectVC, animated: true, completion: nil)
+    func createButtonPressed()
+    {
+        
     }
 }

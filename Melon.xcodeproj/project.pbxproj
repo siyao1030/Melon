@@ -12,7 +12,7 @@
 		9F1FE8D41DD076DD004A423E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8D31DD076DD004A423E /* Assets.xcassets */; };
 		9F1FE8D71DD076DD004A423E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1FE8D51DD076DD004A423E /* LaunchScreen.storyboard */; };
 		9F1FE8E01DD07710004A423E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8DF1DD07710004A423E /* AppDelegate.swift */; };
-		9F1FE8E51DD07727004A423E /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8E21DD07727004A423E /* People.swift */; };
+		9F1FE8E51DD07727004A423E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8E21DD07727004A423E /* Person.swift */; };
 		9F1FE8E61DD07727004A423E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8E31DD07727004A423E /* Transaction.swift */; };
 		9F1FE8E71DD07727004A423E /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8E41DD07727004A423E /* Trip.swift */; };
 		9F1FE9051DD07743004A423E /* PlaidError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE8EA1DD07743004A423E /* PlaidError.swift */; };
@@ -32,6 +32,9 @@
 		9F1FE9161DD07743004A423E /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE9031DD07743004A423E /* TripDetailViewController.swift */; };
 		9F1FE9171DD07743004A423E /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE9041DD07743004A423E /* TripsViewController.swift */; };
 		9F1FE9191DD078ED004A423E /* ConnectBankAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1FE9181DD078ED004A423E /* ConnectBankAccountViewController.swift */; };
+		9FC7BC131DE62A7400466319 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7BC121DE62A7400466319 /* Account.swift */; };
+		9FC7BC151DE6322100466319 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7BC141DE6322100466319 /* PeopleViewController.swift */; };
+		9FC7BC181DE63B0C00466319 /* Melon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7BC161DE63B0C00466319 /* Melon.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +46,7 @@
 		9F1FE8D61DD076DD004A423E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F1FE8DE1DD07710004A423E /* Melon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Melon-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F1FE8DF1DD07710004A423E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F1FE8E21DD07727004A423E /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		9F1FE8E21DD07727004A423E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9F1FE8E31DD07727004A423E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		9F1FE8E41DD07727004A423E /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		9F1FE8EA1DD07743004A423E /* PlaidError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidError.swift; sourceTree = "<group>"; };
@@ -65,6 +68,9 @@
 		9F1FE9041DD07743004A423E /* TripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		9F1FE9181DD078ED004A423E /* ConnectBankAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectBankAccountViewController.swift; sourceTree = "<group>"; };
 		9FC7BC0A1DE585CD00466319 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC7BC121DE62A7400466319 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9FC7BC141DE6322100466319 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		9FC7BC171DE63B0C00466319 /* Melon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Melon.xcdatamodel; sourceTree = "<group>"; };
 		EAAF8D2BD45424A619248680 /* Pods-Melon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Melon/Pods-Melon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,9 +140,11 @@
 		9F1FE8E11DD07727004A423E /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				9F1FE8E21DD07727004A423E /* People.swift */,
+				9F1FE8E21DD07727004A423E /* Person.swift */,
 				9F1FE8E31DD07727004A423E /* Transaction.swift */,
 				9F1FE8E41DD07727004A423E /* Trip.swift */,
+				9FC7BC121DE62A7400466319 /* Account.swift */,
+				9FC7BC161DE63B0C00466319 /* Melon.xcdatamodeld */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				9F1FE9031DD07743004A423E /* TripDetailViewController.swift */,
 				9F1FE9041DD07743004A423E /* TripsViewController.swift */,
 				9F1FE9181DD078ED004A423E /* ConnectBankAccountViewController.swift */,
+				9FC7BC141DE6322100466319 /* PeopleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -334,13 +343,15 @@
 				9F1FE9091DD07743004A423E /* Institution.swift in Sources */,
 				9F1FE8E71DD07727004A423E /* Trip.swift in Sources */,
 				9F1FE90A1DD07743004A423E /* PlaidCategory.swift in Sources */,
+				9FC7BC151DE6322100466319 /* PeopleViewController.swift in Sources */,
 				9F1FE9061DD07743004A423E /* PlaidErrorConvertible.swift in Sources */,
 				9F1FE9051DD07743004A423E /* PlaidError.swift in Sources */,
-				9F1FE8E51DD07727004A423E /* People.swift in Sources */,
+				9F1FE8E51DD07727004A423E /* Person.swift in Sources */,
 				9F1FE9161DD07743004A423E /* TripDetailViewController.swift in Sources */,
 				9F1FE9191DD078ED004A423E /* ConnectBankAccountViewController.swift in Sources */,
 				9F1FE90E1DD07743004A423E /* Plaidster.swift in Sources */,
 				9F1FE90B1DD07743004A423E /* PlaidAccount.swift in Sources */,
+				9FC7BC181DE63B0C00466319 /* Melon.xcdatamodeld in Sources */,
 				9F1FE9071DD07743004A423E /* PlaidsterError.swift in Sources */,
 				9F1FE90D1DD07743004A423E /* PlaidSearchInstitution.swift in Sources */,
 				9F1FE9081DD07743004A423E /* HandlerTypealiases.swift in Sources */,
@@ -351,6 +362,7 @@
 				9F1FE90F1DD07743004A423E /* PlaidTransaction.swift in Sources */,
 				9F1FE8E01DD07710004A423E /* AppDelegate.swift in Sources */,
 				9F1FE8E61DD07727004A423E /* Transaction.swift in Sources */,
+				9FC7BC131DE62A7400466319 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +536,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FC7BC161DE63B0C00466319 /* Melon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FC7BC171DE63B0C00466319 /* Melon.xcdatamodel */,
+			);
+			currentVersion = 9FC7BC171DE63B0C00466319 /* Melon.xcdatamodel */;
+			path = Melon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9F1FE8C11DD076DD004A423E /* Project object */;
 }

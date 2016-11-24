@@ -8,11 +8,16 @@
 
 import UIKit
 
-class People: NSObject {
+class Person: NSObject {
     var name : String
+    var accounts : [Account] = []
     
     init(name: String) {
         self.name = name
+    }
+    
+    func addAccount(account : Account) {
+        accounts.append(account)
     }
 
 }
